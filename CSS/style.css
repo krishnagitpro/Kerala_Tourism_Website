@@ -3,10 +3,30 @@
     margin: 0;
 }
 
-#navbar-image{
+body{ 
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}  
+
+#header-image{
+    margin-top: 70px;
     height: 100px;
     width: 100px;
     border-style: solid;
     border-color:rgb(255, 255, 255);
-    margin-left: 600px;
+}
+
+#header{
+    overflow: hidden;
+    background-color: #f1f1f1;
+    height: 245px;
+    background-image: url("../Images/Header/banner.jpg"), url("../Images/Header/KE02.jpg");
+    background-position: right top, left top;
+    background-repeat: no-repeat, no-repeat;
+}
+
+#navbrand-a {
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(107, 218, 3);
 }
