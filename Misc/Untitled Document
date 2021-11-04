@@ -1,18 +1,8 @@
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 /* NAVBAR BEGIN */
 .header {
     background-color: rgb(146, 228, 140);
-}
-
-#hamburger-button {
-    color: rgb(255, 255, 255);
-    background-color: rgb(255, 255, 255);
 }
 
 #navbar-brand-a {
@@ -53,7 +43,7 @@
     background-color: rgb(255, 255, 255);
     font-size: 20px;
     font-weight: bold;
-    margin-left: 23px;
+    margin-right: 20px;
     width: 100px;
     text-align: center;
     border-radius: 5px;
@@ -78,75 +68,63 @@
 
 
 
-/* CAROUSEL BEGIN */
-
-.item img {
-    width:100%
-  }
-
-/* CAROUSEL END */
 
 
-/* LOGIN PAGE BEGIN*/
-
-.login-main-div {
-    margin-top: 200px;
+/* html, body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    box-sizing: border-box;
+    margin: 0;
+    overflow-x: hidden;
+    top: 0;
+    left: 0;
 }
 
-.login-form {
-    background-color:rgb(146, 228, 140);
-    border-width: 2px;
-    border-style: solid;
-    border-color: white;
-    border-radius: 10px;
+a {
+    text-decoration: none;
+    color: rgba(34, 54, 69, .7);
+    font-weight: 500;
 }
 
-.login-form-h4 {
-    color: white;
-    text-align: center;
+a:hover {
+    color: #e74c3c;
 }
 
-.form-check-label {
-    color: white;
+ul {
+    list-style-type: none;
 }
 
-.login-button {
-    color: rgb(146, 228, 140);
-    background-color: rgb(255, 255, 255);
-    font-size: 20px;
-    font-weight: bold;
-    text-align: center; 
-    border:none;
-    width: 100px;
+.navbar {
+    background: rgb(255, 255, 255);
+    padding: 3rem 2rem;
+    height: 0rem;
+    min-height: 12vh;
 }
 
-.login-button:hover {
-    color: rgb(146, 228, 140);
-    background-color: white;
-    width: 103px;
-    font-size: 23px;
-    font-weight: bolder;
-
-}
-/* LOGIN PAGE END*/
-
-
-
-/* XPLORE CARD BEGIN */
-
-.xplore-main-div {
-    margin-top: 50px;
+.navbar .navbar-brand a {
+    padding: 1rem;
+    display: block;
+    text-decoration: none;
 }
 
-/* XPLORE CARD END */
-
-
-
-/* DISTRICT CARD BEGIN */
-
-.district-main-div {
-    margin-top: 50px;
-    margin-bottom: 50px;
+.navbar-brand {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 2.5rem;
+    color: #e74c3c;
 }
 
-/* DISTRICT CARD END */
+.navbar-toggler {
+    background: #e74c3c;
+    border: none;
+    padding: 10px 6px;
+    outline: none;
+}
+
+.navbar-toggler span {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border: 1px;
+    background: rgb(255, 255, 255);
+} */
