@@ -5,10 +5,9 @@
     box-sizing: border-box;
 }
 
+
+
 /* NAVBAR BEGIN */
-.header {
-    background-color: rgb(146, 228, 140);
-}
 
 #hamburger-button {
     color: rgb(255, 255, 255);
@@ -19,12 +18,13 @@
     color: rgb(255, 255, 255);
     font-weight: bold;
     font-size: 30px;
+    margin-left: 50px;
 }
 
 #navbar-brand-a:hover {
-    color: rgb(255, 255, 255);
+    color: rgb(255, 174, 0);
     font-weight: bolder;
-    font-size: 31px;
+    transform: scale(1.2);
 }
 
 #navbar-menu-a{
@@ -33,23 +33,23 @@
     margin-right: 20px;
     width: 150px;
     text-align: center;
-    border-radius: 5px;
 }
 
 #navbar-menu-a:hover {
-    color: rgb(146, 228, 140);
-    background-color: rgb(255, 255, 255);
-    font-weight: bolder;
+    background-color: rgb(255, 196, 0);
+    color: black;
 }
 
 #navbar-menu-a:active {
-    color: rgb(146, 228, 140);
-    background-color: rgb(255, 255, 255);
-    font-weight: bolder;
+    /* border: 2px solid rgb(238, 255, 0);
+    color: rgb(238, 255, 0);
+    background-color: rgb(43, 33, 33); */
+    background-color: rgb(255, 196, 0);
+    color: black;
 }
 
 #navbar-menu-signin-a{
-    color: rgb(146, 228, 140);
+    color: rgb(0, 0, 0);
     background-color: rgb(255, 255, 255);
     font-size: 20px;
     font-weight: bold;
@@ -60,41 +60,72 @@
 }
 
 #navbar-menu-signin-a:hover {
-    color: rgb(146, 228, 140);
-    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 174, 0);
     font-weight: bolder;
-    width: 105px;
-    font-size: 21px;
+    transform: scale(1.1);
 }
 
 #navbar-menu-signin-a:active {
-    color: rgb(146, 228, 140);
-    background-color: rgb(255, 255, 255);
-    font-weight: bolder;
-    width: 101px;
-    font-size: 21px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 174, 0);
+    transform: scale(1.1);
 }
-/* NAVBAR END */
+/* NAVBAR END *
+
+
+
+/* BODY BACKGROUND BEGIN */
+.index {
+    background-image: url("../Images/Body_Background/BG9-HBBlue.jpg");
+    background-repeat: no-repeat;
+    background-size: 1920px 1080px;
+}
+/* BODY BACKGROUND END */
 
 
 
 /* CAROUSEL BEGIN */
-
-.item img {
+/* .item img {
     width:100%
+  } */
+
+#carouselExampleIndicators {
+    margin-top: 80px;
   }
 
+.carousel-img {
+    opacity: 0.9;
+}
 /* CAROUSEL END */
 
 
 /* LOGIN PAGE BEGIN*/
+.signup-main-div {
+    margin-top: 200px;
+}
+
+.form-group small {
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.form-control .success input {
+    border-color: #2ecc71;
+}
+
+.form-control .error input {
+    border-color: #e74c3c;
+}
 
 .login-main-div {
     margin-top: 200px;
 }
 
 .login-form {
-    background-color:rgb(146, 228, 140);
+    background-color:rgb(175, 169, 169);
     border-width: 2px;
     border-style: solid;
     border-color: white;
@@ -111,9 +142,9 @@
 }
 
 .login-button {
-    color: rgb(146, 228, 140);
+    color: rgb(0, 0, 0);
     background-color: rgb(255, 255, 255);
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
     text-align: center; 
     border:none;
@@ -121,11 +152,9 @@
 }
 
 .login-button:hover {
-    color: rgb(146, 228, 140);
-    background-color: white;
-    width: 103px;
-    font-size: 23px;
-    font-weight: bolder;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 174, 0);
+    transform: scale(1.1);
 
 }
 /* LOGIN PAGE END*/
@@ -133,20 +162,23 @@
 
 
 /* XPLORE CARD BEGIN */
-
 .xplore-main-div {
     margin-top: 50px;
 }
 
+/* .xplore-main-div .card {
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    background-color: rgb(192, 189, 189);
+} */
 /* XPLORE CARD END */
 
 
 
 /* DISTRICT CARD BEGIN */
-
 .district-main-div {
     margin-top: 50px;
     margin-bottom: 50px;
 }
-
 /* DISTRICT CARD END */

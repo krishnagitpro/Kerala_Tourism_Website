@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="Bootstrap/css/bootstrap.css">
     <!-- Bootstrap CSS File END-->
 
-    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/style2.css">
 
     <link rel="icon" type="image/x-icon" href="/Images/Navbar/6.jpg">
 
@@ -26,7 +26,7 @@
 
   <!--HEADER BEGIN-->
   <header class="header sticky-top">
-    <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+    <nav class="navbar navbar-expand-md sticky-top navbar-dark bg-dark">
       <div class="container-fluid">
         <a class="navbar-brand" id="navbar-brand-a" href="index.html">xplorekerala.org</a>
         <button class="navbar-toggler" id="hamburger-button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -54,19 +54,55 @@
     </nav>
   </header>
   <!--HEADER END-->
+  <div class="tm-row">
+    <div class="tm-col-left"></div>
+    <main class="tm-col-right tm-contact-main"> <!-- Content -->
+        <section class="tm-content tm-contact">
+            <h2 class="mb-4 tm-content-title">Welcome Back...!</h2>
+            <p class="mb-85">Please enter your login credentials to continue.</p>
+            <form id="contact-form" action="districts.html" onsubmit="return lvalidate()">
+                <div class="form-group mb-4">
+                    <input type="email" id="email" class="form-control" placeholder="Email"/>
+                </div>
+                <div class="form-group mb-4">
+                    <input type="password" id="password" class="form-control" placeholder="Password"/>
+                </div>
+                <!-- <br>
+                <p class="">Password Strength :</p>
+                <div id="typepass">
+                    <div id="strengthResult">
+                    </div>
+                  </div>
+                  <br> -->
+                <div class="text-left">
+                    <button type="submit" class="btn btn-big btn-primary">Login</button>
+                </div>
+            </form>
+        </section>
+    </main>
+  </div>
 
-  <div class="container login-main-div">
+  <!-- <div class="container login-main-div">
     <div class="row">
         <div class="col-md-4 offset-md-4">
             <div class="login-form mt-4 p-4">
-                <form action="" method="" class="row g-3">
+                <form class="row g-3" name="signup_form" action="" method="" onsubmit="return validateSigninform()" >
                     <h4 class="login-form-h4">Let's Xplore</h4>
+
                     <div class="col-12">
-                        <input type="text" name="username" class="form-control" placeholder="Username">
+                        <input type="text" name="email" class="form-control" placeholder="E-Mail">
                     </div>
+                    <div class="col-12">
+                      <small>Error Message</small>
+                    </div>
+                    
                     <div class="col-12">
                         <input type="password" name="password" class="form-control" placeholder="Password">
                     </div>
+                    <div class="col-12">
+                      <small>Error Message</small>
+                    </div>
+
                     <div class="col-12">
                         <div class="form-check">
                             <input class="form-check-input" type="checkbox" id="rememberMe">
@@ -74,19 +110,21 @@
                         </div>
                     </div>
                     <div class="col-12">
-                        <button type="submit" class="login-button btn btn-dark float-end">Login</button>
+                        <button type="submit" class="login-button btn btn-dark float-end">Sign In</button>
                     </div>
                 </form>
                 <hr class="mt-4">
                 <div class="col-12">
-                    <p class="login-form-h4 text-center mb-0">Have not account yet? <a class="login-form-h4" href="signup.html">&nbsp;Signup</a></p>
+                    <p class="login-form-h4 text-center mb-0">Have not account yet? <a class="login-form-h4" href="signup.html">&nbsp;Sign Up</a></p>
                 </div>
             </div>
         </div>
     </div>
-    </div>
+    </div> -->
 
-  
+    <!-- My JS File BEGIN-->
+    <script src="JS/index.js"></script>
+    <!-- My JS File END-->
 
     <!-- Bootstrap JS File START-->
     <script src="Bootstrap/js/jquery.slim.min.js"></script>

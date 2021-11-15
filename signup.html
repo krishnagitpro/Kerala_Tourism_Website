@@ -12,7 +12,8 @@
     <link rel="stylesheet" href="Bootstrap/css/bootstrap.css">
     <!-- Bootstrap CSS File END-->
 
-    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/style2.css">
+    <link rel="stylesheet" href="CSS/style1.css">
 
     <link rel="icon" type="image/x-icon" href="/Images/Navbar/6.jpg">
 
@@ -26,7 +27,7 @@
 
   <!--HEADER BEGIN-->
   <header class="header sticky-top">
-    <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+    <nav class="navbar navbar-expand-md sticky-top navbar-dark bg-dark">
       <div class="container-fluid">
         <a class="navbar-brand" id="navbar-brand-a" href="index.html">xplorekerala.org</a>
         <button class="navbar-toggler" id="hamburger-button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -54,31 +55,100 @@
     </nav>
   </header>
   <!--HEADER END-->
+
+  <div class="tm-row">
+    <div class="tm-col-left"></div>
+      <main class="tm-col-right tm-contact-main"> <!-- Content -->
+        <section class="tm-content tm-contact">
+            <h2 class="mb-4 tm-content-title">Welcome...!</h2>
+            <p class="mb-85">Please enter the details to signup.</p>
+            <form id="contact-form" action="districts.html" onsubmit="return svalidate()">
+                <div class="form-group mb-4">
+                    <input type="text" name="name" class="form-control" placeholder="Please enter a userame"/>
+                </div>
+                <div class="form-group mb-4">
+                    <input type="email" id="semail" class="form-control" placeholder="Your email id"/>
+                </div>
+                <div class="form-group mb-4">
+                    <input type="text" id="phone" class="form-control" placeholder="Your phone number"/>
+                </div>
+                <div class="form-group mb-4">
+                    <input type="password" id="password1" class="form-control" placeholder="Enter a password"/>
+                </div>
+                <div class="form-group mb-4">
+                    <input type="password" id="password2" class="form-control" placeholder="Re-enter password"/>
+                </div>
+
+                <br>
+                <!-- <p class="">Password Strength :</p>
+                <div id="typepass">
+                    <div id="strengthResult">
+                    </div>
+                  </div>
+                  <br> -->
+                
+                
+                    <button type="submit" class="login-button btn btn-dark">Sign Up</button>
+                
+                <br>
+            </form>
+        </section>
+      </main>
+    </div>
+  </div>
   
-  <div class="container login-main-div">
+  <!-- <div class="container signup-main-div">
     <div class="row">
         <div class="col-md-4 offset-md-4">
             <div class="login-form mt-4 p-4">
-                <form action="" method="" class="row g-3">
+
+                <form class="row g-3" id="signup_form" name="signup_form" onsubmit="return checkInputs()">
                     <h4 class="login-form-h4">Let's Sign UP and Xplore</h4>
-                    <div class="col-12">
-                        <input type="text" name="username" class="form-control" placeholder="E-Mail">
+
+                    <div class="form-group col-12">
+                      <input type="text" id="email_signup" name="email" class="form-control" placeholder="Email    (will be your username)">
+                      <label id="email_signup_small"></label>
                     </div>
-                    <div class="col-12">
-                        <input type="password" name="password" class="form-control" placeholder="Password">
+
+                    <div class="form-group col-12">
+                      <input type="text" id="phone_signup" name="phonenum" class="form-control" placeholder="Phone">
+                      <label id="phone_signup_small"></label>
                     </div>
-                    <div class="col-12">
-                        <input type="password" name="confirm_password" class="form-control" placeholder="Confirm Password">
+
+                    <div class="form-group col-12">
+                      <input type="password" id="pass_signup" name="password" class="form-control" placeholder="Password">
+                      <label id="pass_signup_small1"></label>
+                      <label id="pass_signup_small2"></label>
+                      <label id="pass_signup_small3"></label>
                     </div>
-                    <div class="col-12">
-                        <button type="submit" class="login-button btn btn-dark float-end">Sign UP</button>
+
+                    <div class="form-group col-12">
+                      <input type="password" id="confpass_signup" name="confirm_password" class="form-control" placeholder="Confirm Password">
+                      <label id="confpass_signup_small"></label>
                     </div>
+
+                    <p class="">Password Strength :</p>
+                            <div id="typepass">
+                                <div id="strengthResult">
+                                </div>
+                              </div>
+                              <br>
+
+                    <div class="col-12">
+                        <input type="submit" name="submit" value="Sign Up" class="login-button btn btn-dark float-end">
+                    </div>
+
                 </form>
+
             </div>
         </div>
     </div>
-    </div>
+    </div> -->
 
+
+    <!-- My JS File BEGIN-->
+    <script src="JS/index.js"></script>
+    <!-- My JS File END-->
   
 
     <!-- Bootstrap JS File START-->
